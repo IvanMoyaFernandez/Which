@@ -4,8 +4,6 @@ import javax.persistence.*;
 
 @Entity
 public class Smartphone {
-    private static final long serialVersionUID = 1L;
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -17,19 +15,19 @@ public class Smartphone {
     private String marca;
 
     @Column(name = "camara")
-    private Integer camara;
+    private Double camara;
 
     @Column(name = "frontCamara")
-    private Integer frontCamara;
+    private Double frontCamara;
 
     @Column(name = "bateria")
     private Integer bateria;
 
     @Column(name = "pulgadasPantalla")
-    private Integer pulgadasPantalla;
+    private Double pulgadasPantalla;
 
     @Column(name = "resolucionPantalla")
-    private Integer resolucionPantalla;
+    private String resolucionPantalla;
 
     @Column(name = "resolucionVideo")
     private String resolucionVideo;
@@ -43,9 +41,6 @@ public class Smartphone {
     @Column(name = "rom")
     private Integer rom;
 
-    public static long getSerialVersionUID() {
-        return serialVersionUID;
-    }
 
     public Long getId() {
         return id;
@@ -71,19 +66,19 @@ public class Smartphone {
         this.marca = marca;
     }
 
-    public Integer getCamara() {
+    public Double getCamara() {
         return camara;
     }
 
-    public void setCamara(Integer camara) {
+    public void setCamara(Double camara) {
         this.camara = camara;
     }
 
-    public Integer getFrontCamara() {
+    public Double getFrontCamara() {
         return frontCamara;
     }
 
-    public void setFrontCamara(Integer frontCamara) {
+    public void setFrontCamara(Double frontCamara) {
         this.frontCamara = frontCamara;
     }
 
@@ -95,21 +90,17 @@ public class Smartphone {
         this.bateria = bateria;
     }
 
-    public Integer getPulgadasPantalla() {
+    public Double getPulgadasPantalla() {
         return pulgadasPantalla;
     }
 
-    public void setPulgadasPantalla(Integer pulgadasPantalla) {
-        this.pulgadasPantalla = pulgadasPantalla;
-    }
+    public void setPulgadasPantalla(Double pulgadasPantalla) {this.pulgadasPantalla = pulgadasPantalla;}
 
-    public Integer getResolucionPantalla() {
+    public String getResolucionPantalla() {
         return resolucionPantalla;
     }
 
-    public void setResolucionPantalla(Integer resolucionPantalla) {
-        this.resolucionPantalla = resolucionPantalla;
-    }
+    public void setResolucionPantalla(String resolucionPantalla) {this.resolucionPantalla = resolucionPantalla;}
 
     public String getResolucionVideo() {
         return resolucionVideo;
