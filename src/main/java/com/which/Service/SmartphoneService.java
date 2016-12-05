@@ -31,7 +31,7 @@ public class SmartphoneService {
         s1.setRam(4);
         s1.setSo("Android");
         s1.setRom(32);
-        smartphoneRepository.save();
+        smartphoneRepository.save(s1);
 
         Smartphone s2 = new Smartphone();
         s2.setModelo("Galaxy S6 Edge+");
@@ -75,9 +75,6 @@ public class SmartphoneService {
         s4.setRom(16);
         smartphoneRepository.save(s4);
 
-        System.out.println(smartphoneRepository.findByModeloStartingWith("Ga"));
+        // System.out.println(smartphoneRepository.findByModeloStartingWith("Ga"));
     }
-
-
-
 }
