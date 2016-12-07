@@ -41,6 +41,21 @@ public class Smartphone {
     @Column(name = "rom")
     private Integer rom;
 
+    public Smartphone() {}
+
+    public Smartphone(String modelo, String marca, Double camara, Double frontCamara, Integer bateria, Double pulgadasPantalla, String resolucionPantalla, String resolucionVideo, Integer ram, String so, Integer rom) {
+        this.modelo = modelo;
+        this.marca = marca;
+        this.camara = camara;
+        this.frontCamara = frontCamara;
+        this.bateria = bateria;
+        this.pulgadasPantalla = pulgadasPantalla;
+        this.resolucionPantalla = resolucionPantalla;
+        this.resolucionVideo = resolucionVideo;
+        this.ram = ram;
+        this.so = so;
+        this.rom = rom;
+    }
 
     public Long getId() {
         return id;

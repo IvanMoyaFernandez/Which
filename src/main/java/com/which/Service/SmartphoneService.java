@@ -22,15 +22,15 @@ public class SmartphoneService {
         Smartphone s1 = new Smartphone();
         s1.setModelo("Galaxy S7");
         s1.setMarca("Samsung");
-        s1.setCamara(12.0);
-        s1.setFrontCamara(5.0);
-        s1.setBateria(3000);
-        s1.setPulgadasPantalla(5.1);
-        s1.setResolucionPantalla("1280p x 720p");
+        s1.setCamara(12.0); // MP
+        s1.setFrontCamara(5.0); // MP
+        s1.setBateria(3000); // MiliAmperios
+        s1.setPulgadasPantalla(5.1); // Pulgadas
+        s1.setResolucionPantalla("1280p x 720p"); // pixeles
         s1.setResolucionVideo("HD");
-        s1.setRam(4);
+        s1.setRam(4); // GB
         s1.setSo("Android");
-        s1.setRom(32);
+        s1.setRom(32); // GB
         smartphoneRepository.save(s1);
 
         Smartphone s2 = new Smartphone();
